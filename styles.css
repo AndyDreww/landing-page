@@ -15,6 +15,12 @@ h1 {
     font-weight: 900;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -52,6 +58,11 @@ header .logo {
     margin: 0 auto;
 }
 
+.smaller-container {
+    width: 65vw;
+    margin: 0 auto;
+}
+
 .logo {
     margin: 0;
 }
@@ -70,3 +81,50 @@ header .logo {
     padding-right: 40px;
 }
 
+section {
+    padding: 60px 0;
+}
+
+.intro h2 {
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    max-width: 200px;
+}
+
+.intro .image {
+    height: 150px;
+    width: 150px;
+    border: 2px solid #3882f6;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.testimony {
+    background: #e5e7eb;
+}
+
+.testimony blockquote p {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1f2937
+}
+
+.testimony footer {
+    text-align: right;
+    font-size: 18px;
+    font-weight: 900;
+}
