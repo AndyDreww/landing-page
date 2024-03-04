@@ -128,3 +128,44 @@ section {
     font-size: 18px;
     font-weight: 900;
 }
+
+.cta .smaller-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882f6;
+    padding: 40px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.cta h3 , .cta p{
+    margin: 0;
+}
+
+.cta button {
+    background-color: #3882f6;
+    color: #fff;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    .header-main {
+        flex-direction: column-reverse;
+    }
+
+    .header-text {
+        margin-top: 20px;;
+    }
+    .box-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        margin-bottom: 30px;
+    }
+}
