@@ -81,6 +81,24 @@ header .logo {
     padding-right: 40px;
 }
 
+header button {
+    background:#3882f6;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.15em;
+}
+
+header button:hover {
+    background:#2d6acc;
+    cursor: pointer;
+}
+
+header button:active {
+    background:#1e498c;
+}
+
 section {
     padding: 60px 0;
 }
@@ -151,6 +169,12 @@ section {
     border-radius: 5px;
 }
 
+
+
+.cta button:hover {
+    background-color: #2f70d7;
+}
+
 body > footer {
     display: flex;
     justify-content: center;
@@ -171,6 +195,9 @@ body > footer {
     justify-content: center;
     align-items: center;
     font-size: 40px;
+    transition: all 2s;
+    left: 0;
+    position: absolute;
 }
 
 .mob-menu a {
@@ -190,7 +217,7 @@ body > footer {
 }
 
 .hidden {
-    display: none;
+    left: -200vh;
 }
 
 .nav-toggle {
@@ -237,5 +264,9 @@ body > footer {
 
     .nav-right {
         display: none;
+    }
+
+    .mob-menu {
+        top:0;
     }
 }
