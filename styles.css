@@ -6,8 +6,12 @@ body {
 
 header {
     margin: 0;
-    background: #1f2937;
+    background: #281606;
     color: #fff;
+}
+
+h1, h2, .logo, .header-text p span {
+    font-family: "Satisfy", cursive;;
 }
 
 h1 {
@@ -72,6 +76,10 @@ header .logo {
     padding: 80px 0;
 }
 
+.header-img {
+    flex: 2;
+}
+
 .header-img img {
     width: 100%;
     max-width: 1500px;
@@ -79,10 +87,27 @@ header .logo {
 
 .header-text {
     padding-right: 40px;
+    flex: 1;
+}
+
+.header-text h1 {
+    margin-bottom: 0;
+}
+
+.header-text p {
+    line-height: 1.75;
+}
+
+.header-text p span {
+    position: relative;
+    display: block;
+    font-size: 1.25em;
+    margin-top: -20px;
+    z-index: 0;
 }
 
 header button {
-    background:#3882f6;
+    background:#a4ac86;
     color: #fff;
     padding: 10px 25px;
     border: none;
@@ -91,12 +116,12 @@ header button {
 }
 
 header button:hover {
-    background:#2d6acc;
+    background:#70765b;
     cursor: pointer;
 }
 
 header button:active {
-    background:#1e498c;
+    background:#3a3d2f;
 }
 
 section {
@@ -125,15 +150,16 @@ section {
 }
 
 .intro .image {
-    max-height: 150px;
+    height: 150px;
     max-width: 150px;
-    border: 2px solid #3882f6;
+    border: 2px solid #c2c5aa;
     margin: 0 auto;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
 }
 
 .image img {
@@ -161,7 +187,7 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #3882f6;
+    background-color: #c2c5aa;
     padding: 40px;
     border-radius: 15px;
     color: #fff;
@@ -172,7 +198,7 @@ section {
 }
 
 .cta button {
-    background-color: #3882f6;
+    background-color: #c2c5aa;
     color: #fff;
     padding: 10px 25px;
     border: 2px solid #fff;
@@ -182,14 +208,15 @@ section {
 
 
 .cta button:hover {
-    background-color: #2f70d7;
+    background-color: #7a7c6b;
+    cursor: pointer;
 }
 
 body > footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1f2937;
+    background-color: #281606;
     color: #fff;
     padding: 40px 0;
 }
@@ -197,7 +224,7 @@ body > footer {
 .mob-menu {
     width: 100vw;
     height: 100vh;
-    background-color: #1f2937;
+    background-color: #281606;
     color: #fff;
     margin: 0;
     padding: 10px;
@@ -208,6 +235,7 @@ body > footer {
     transition: all 2s;
     left: 0;
     position: absolute;
+    z-index: 2;
 }
 
 .mob-menu a {
