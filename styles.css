@@ -111,6 +111,7 @@ section {
     display: flex;
     justify-content: space-around;
     margin: 40px 0;
+    align-items: flex-start;
 }
 
 .box {
@@ -120,14 +121,23 @@ section {
     text-align: center;
     gap: 10px;
     max-width: 200px;
+    overflow: hidden;
 }
 
 .intro .image {
-    height: 150px;
-    width: 150px;
+    max-height: 150px;
+    max-width: 150px;
     border: 2px solid #3882f6;
     margin: 0 auto;
     border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
 }
 
 .testimony {
